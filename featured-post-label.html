@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Featured post Label</title>
+<title>Featured Label</title>
 <meta content='width=device-width, initial-scale=1' name='viewport'>
 <style>
 html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -62,45 +62,93 @@ a img {
   margin:0 5px 10px;
   font-weight:500;
 }
-	
-.related-post-style-2 img:nth-child(1) {
-    height: 500px;
-}
-.related-post-style-2  li:nth-child(2) {
-    height: 58%;
-    left: 50%;
-    width: 50%;
-}
-.related-post-style-2  li:nth-child(3) {
-    display: none;
-    height: 50%;
-    left: 75%;
-    width: 25%;
-}	
-.related-post-style-2  li:nth-child(4) {
-    height: 42%;
-    left: 50%;
-    top: 58%;
-    width: 25%;
-}
-.related-post-style-2  li:nth-child(1), .related-post-style-2  li:nth-child(2), .related-post-style-2  li:nth-child(3), .related-post-style-2  li:nth-child(4), .related-post-style-2  li:nth-child(5) {
-    display: block;
-}
-
-.related-post-style-2 .featured-label-thumbnail {
-    height: 100%;
-    position: absolute;
+.related-post-style-2 li:nth-child(1) {
+    max-width: 485px;
     width: 100%;
-    z-index: 2;
+float: left !important;
 }
+.related-post-style-2 li:nth-child(1) .featured-label-thumbnail {
+    float: none;
+}
+.featured-label-thumbnail {
+    background: #222 none repeat scroll 0 0 !important;
+    float: left;
+    margin: 0 20px 0 0;
+    overflow: hidden;
+    width: 100%;
+}	
+.related-post-style-2 img:nth-child(1) {
+    height: 400px;
+}	
 .related-post-style-2 img {
-    max-height: 290px;
+    max-height: 400px;
     object-fit: cover;
     opacity: 0.9;
     padding: 0;
     width: 100%;
+}	
+	
+.related-post-style-2 li:nth-child(2) {
+    overflow: hidden;
+}	
+.related-post-style-2 li:nth-child(2) .featured-label-thumbnail {
+    height: 200px;
+    margin: 0 15px 0 0;
+    width: 100%;
+}	
+	
+	
+.related-post-style-2 li:nth-child(3) .featured-label-thumbnail, .related-post-style-2 li:nth-child(4) .featured-label-thumbnail, .related-post-style-2 li:nth-child(5) .featured-label-thumbnail {
+    height: 200px;
+    margin: 0 15px 0 0;
+    width: 200px;
 }
-.related-post-style-2 .featured-more,.related-post-style-2 .featured-more, .related-post-style-2 .related-post-item-summary{
+.related-post-style-2 li:nth-child(2) .featured-label-thumbnail img, .related-post-style-2 li:nth-child(3) .featured-label-thumbnail img, .related-post-style-2 li:nth-child(4) .featured-label-thumbnail img {
+    height: 100%;
+}	
+.related-post-style-2 img:hover {
+    opacity: 1;
+    transition: all 0.25s ease 0s;
+}
+	
+	
+.related-post-style-2 li:nth-child(3), .related-post-style-2 li:nth-child(4), .related-post-style-2 li:nth-child(5) {
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    padding: 10px 0;
+}	
+	
+	
+.related-post-style-2  li:nth-child(1) .featured-title {
+    margin: 10px 0 0;
+}	
+.related-post-style-2 .featured-title {
+    color: #222;
+    display: block;
+    font: 700 1.3rem/123% "Work Sans",sans-serif;
+    text-decoration: none;
+}
+	
+.related-post-style-2 .featured-descripcion {
+    color: #555;
+    font: 400 1rem/140% "Lato",sans-serif;
+    margin: 7px 0 0;
+}
+.related-post-style-2 span {
+    display: block;
+}	
+	
+.related-post-style-2 li:nth-child(2) .featured-title, .related-post-style-2 li:nth-child(3) .featured-title, .related-post-style-2 li:nth-child(4) .featured-title, .related-post-style-2 li:nth-child(5) .featured-title {
+    font: 700 1.1rem/123% "Work Sans",sans-serif;
+    margin: 5px 0 0;
+}	
+.related-post-style-2 li:nth-child(2) .featured-descripcion, .related-post-style-2 li:nth-child(3) .featured-descripcion, .related-post-style-2 li:nth-child(4) .featured-descripcion, .related-post-style-2 li:nth-child(5) .featured-descripcion {
+    display: none !important;
+}	
+	
+		
+	
+.related-post-style-2 .featured-more,.related-post-style-2 .featured-more{
   display:none;
 }
 .related-post-style-2 li:hover .featured-label-thumbnail:after{opacity:.8}
