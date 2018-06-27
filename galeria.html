@@ -133,8 +133,15 @@ a img {
 .related-post-style-2 img:hover {
     opacity: 1;
     transition: all 0.25s ease 0s;
+    webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s,-webkit-transform 1s;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);	
 }	
-@media only screen and (max-width: 728px){
+@media only screen and (max-width: 500px){
 .related-post-style-2 li {
     border: medium none;
     float: left;
