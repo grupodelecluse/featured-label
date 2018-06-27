@@ -62,116 +62,40 @@ a img {
   margin:0 5px 10px;
   font-weight:500;
 }
-.related-post-style-2 ul {
-    background: #222 none repeat scroll 0 0;
-    height: 500px;
-}
-.related-post-style-2 ul, .related-post-style-2 li {
-    list-style: outside none none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-.related-post-style-2 * {
-    box-sizing: border-box;
-}
-
-
-.related-post-style-2 li:nth-child(1) {
-    left: 0;
-    top: 0;
-}
-.related-post-style-2 li:nth-child(1), .related-post-style-2 li:nth-child(2), .related-post-style-2 li:nth-child(3), .related-post-style-2 li:nth-child(4), .related-post-style-2 li:nth-child(5) {
-    display: block;
-}
-.related-post-style-2 .featured-label-thumbnail, #.related-post-style-2 li {
-    transition: all 0.4s ease-in-out 0s;
-}
-.related-post-style-2 li {
-    display: none;
-    height: 100%;
-    position: absolute;
-    width: 50%;
-}
-
-.related-post-style-2 a {
-    display: block;
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
-}
-.related-post-style-2 li:nth-child(1) .featured-label-thumbnail {
-    display: none;
-}
-.related-post-style-2 .featured-label-thumbnail{
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-}
-.related-post-style-2 img {
-    background: #222 none repeat scroll 0 0;
-    border: 0 none;
-    display: block;
-    height: auto;
-    opacity: 0.9;
-    padding: 0;
-    transform: scale(1) rotate(0deg);
-    transition: all 0.6s linear 0s;
-    width: 100%;
-}
-
-.related-post-style-2 li:nth-child(1) .featured-title {
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%) repeat scroll 0 0;
-    bottom: 0;
-    box-decoration-break: clone;
-    color: #fff;
-    display: inline;
-    font: 700 2rem/123% "Work Sans",sans-serif;
-    left: 0;
-    overflow: hidden;
-    padding: 20px 20px 40px;
-    text-align: left;
-    width: 100%;
-}
-.related-post-style-2 li:nth-child(2) {
-    height: 58%;
-    left: 50%;
-    width: 50%;
-}
-
-.related-post-style-2 li:nth-child(2) .featured-title {
-    font: 700 1.3rem/123% "Work Sans",sans-serif;
-}
-.related-post-style-2 .featured-title {
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%) repeat scroll 0 0;
-    bottom: 0;
-    color: #fff;
-    font: 600 0.95rem/123% "Work Sans",sans-serif;
-    left: 0;
-    padding: 10px;
-    position: absolute;
-    text-align: left;
-    width: 100%;
-}
-.related-post-style-2 li:nth-child(3) {
-    display: none;
-    height: 50%;
-    left: 75%;
-    width: 25%;
-}
-#slides li:nth-child(4) {
-    height: 42%;
-    left: 50%;
-    top: 58%;
-    width: 25%;
-}
-#slides li:nth-child(5) {
-    height: 42%;
-    left: 75%;
-    top: 58%;
-    width: 25%;
-}
+	
+	
+.related-post-style-2 * {box-sizing: border-box;}
+.related-post-style-2 ul, .related-post-style-2 li {list-style: outside none none; margin: 0; padding: 0; position: relative;}
+.related-post-style-2 ul {background: #222 none repeat scroll 0 0; height: 500px;}
+.related-post-style-2 li {display: none; height: 100%; position: absolute; width: 50%;}
+.related-post-style-2 li::before {background: #ff3c36 none repeat scroll 0 0; border-radius: 50%; color: #fff; content: "\f06d"; display: none; font-family: fontawesome; font-size: 20px; height: 35px; line-height: 32px; position: absolute; right: 10px; text-align: center; top: 10px; width: 35px; z-index: 1;}
+.related-post-style-2 li:nth-child(1), .related-post-style-2 li:nth-child(2), .related-post-style-2 li:nth-child(3), .related-post-style-2 li:nth-child(4), .related-post-style-2 li:nth-child(5) {display: block;}
+.related-post-style-2 li:nth-child(1) {left: 0; top: 0;}
+.related-post-style-2 li:nth-child(1):before {display: none;}
+.related-post-style-2 li:nth-child(2) {height: 58%; left: 50%; width: 50%;}
+.related-post-style-2 li:nth-child(3) {display: none; height: 50%; left: 75%; width: 25%;}
+.related-post-style-2 li:nth-child(4) {height: 42%; left: 50%; top: 58%; width: 25%;}
+.related-post-style-2 li:nth-child(5) {height: 42%; left: 75%; top: 58%; width: 25%;}
+.related-post-style-2 li:nth-child(1) .featured-title {background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%) repeat scroll 0 0; bottom: 0; box-decoration-break: clone; color: #fff; display: inline; font: 700 2rem/123% "Work Sans",sans-serif; left: 0; overflow: hidden; padding: 20px 20px 40px; text-align: left; width: 100%;}
+.related-post-style-2 li:nth-child(1) .featured-title:hover {color: #ffee00; text-decoration: none;}
+.related-post-style-2 li:nth-child(1) .label_text {background: transparent none repeat scroll 0 0; bottom: 20px !important; color: #ccc; display: block; font: 400 0.7rem/100% "Work Sans",sans-serif; height: auto; left: 20px; padding: 0; right: 20px; top: auto;}
+.autname {float: left; margin: 0 10px 0 0;}
+.related-post-style-2 li:nth-child(1) span.dd {margin: 0;}
+.related-post-style-2 li:nth-child(1) span.dm {margin: 0;}
+.related-post-style-2 li:nth-child(1) span.dy, .related-post-style-2 li:nth-child(1) span.autname {}
+.related-post-style-2 a {display: block; height: 100%; overflow: hidden; width: 100%;}
+.related-post-style-2 img {background: #222 none repeat scroll 0 0; border: 0 none; display: block; height: auto; opacity: 0.9; padding: 0; transform: scale(1) rotate(0deg); transition: all 0.6s linear 0s; width: 100%;}
+.related-post-style-2 li a:hover img {opacity: 1; transform: scale(1.1) rotate(0deg); transition: all 0.3s linear 0s;}
+.related-post-style-2 .featured-label-thumbnail {height: 100%; position: absolute; width: 100%; z-index: 2;}
+.related-post-style-2 .featured-title {background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%) repeat scroll 0 0; bottom: 0; color: #fff; font: 600 0.95rem/123% "Work Sans",sans-serif; left: 0; padding: 10px; position: absolute; text-align: left; width: 100%;}
+.related-post-style-2 .featured-title:hover {color: #ffee00; text-decoration: none;}
+.related-post-style-2 li:nth-child(2) .featured-title { font: 700 1.3rem/123% "Work Sans",sans-serif;}
+.related-post-style-2 .label_text {background: #ff3c36 none repeat scroll 0 0; color: #fff; display: none; font: 600 0.65rem "Work Sans",sans-serif; left: 0; letter-spacing: 0.05rem; padding: 5px 10px; position: absolute; text-transform: uppercase; top: 0; width: auto; z-index: 3;}
+.date::before {content: "\f073"; font-family: fontawesome; position: relative; bottom: 1px; margin: 0 4px 0 0;}
+.related-post-style-2 li:nth-child(2) .autname, .related-post-style-2 li:nth-child(3) .autname, .related-post-style-2 li:nth-child(4) .autname, .related-post-style-2 li:nth-child(5) .autname {display: none;}
+.related-post-style-2 .featured-label-thumbnail, .related-post-style-2 li {transition: all 0.4s ease-in-out 0s;}
+.related-post-style-2 li:nth-child(1) .featured-label-thumbnail {display: none;}
+.related-post-style-2 li:hover .featured-label-thumbnail {opacity: 0.1;}	
 
 
 .related-post-style-2 .featured-more,.related-post-style-2 .featured-more, .related-post-style-2 .related-post-item-summary{
