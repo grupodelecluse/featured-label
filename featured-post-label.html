@@ -86,6 +86,13 @@ float: left !important;
     opacity: 0.9;
     padding: 0;
     width: 100%;
+    webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s,-webkit-transform 1s;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }	
 
 .related-post-style-2  li:nth-child(1) .featured-title {
